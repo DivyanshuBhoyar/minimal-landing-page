@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media (max-width: 900px) {
+  html {
+    font-size: 20px;
+  }
+}
+@media (max-width: 400px) {
+  html {
+    font-size: 16px;
+  }
+}
+.main-flex {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.top-flx {
+  display: flex;
+  flex-direction: row;
+  height: 85vh;
+  width: 100vw;
+}
+.top-flx .lflx {
+  padding: 6rem 3rem;
+  flex-grow: 1;
+  font-family: "Raleway";
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.top-flx .lflx h1 {
+  font-weight: 400;
+  font-size: 2.3rem;
+  color: #0b0125;
+}
+.top-flx .lflx p {
+  font-size: 0.6rem;
+  font-family: "IBM Plex Sans";
+  margin-top: 1.2rem;
+  width: 60%;
+  opacity: 60%;
+  margin-left: auto;
+  margin-right: 2.2rem;
+  line-height: 1.25;
+}
+.top-flx .lflx span {
+  font-weight: 600;
+}
+.top-flx .rflx {
+  background-image: url("./assets/clark-van-der-beken-POUMjDlf9GM-unsplash.jpg");
+  background-size: cover;
+  min-width: 60%;
+  height: 100%;
+}
+
+.bottom-flx {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  padding-left: 1rem;
+  justify-content: flex-end;
+  font-family: "IBM Plex Sans";
+}
+.bottom-flx .bbox {
+  height: 100%;
+  width: 22%;
+}
+.bottom-flx .box-left {
+  background-image: url("https://pixabay.com/get/57e8d3444351ad14f1dc8460da29317e1237dae15b5977_640.jpg");
+  background-size: cover;
+}
+.bottom-flx .bbox-l {
+  width: 50%;
+  margin: 0 0.8rem;
+  display: flex;
+  flex-direction: row-reverse;
+  font-family: "Raleway";
+}
+.bottom-flx .btn {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ background: #536976;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.bottom-flx .btn .txt {
+  color: azure;
+}
+
+.item {
+  width: 38%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.8rem;
+  align-items: center;
+  background-color: #d6fce9;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding: 5px 15px;
+  height: 4vh;
+}
+.navbar img {
+  height: 4vh;
+  width: 2vw;
+}
